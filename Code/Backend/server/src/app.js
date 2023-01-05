@@ -4,8 +4,15 @@ const { registerUser } = require('./controllers/users/usersCtrl');
 const userRoute = require('./routes/users/usersRoute');
 const app = express();
 
+
+
 //dbConnect
 dbConnect();
+
+//middlewares
+//body parser
+app.use(express.json()); 
+
 
 //routes
 app.use('/', userRoute);
