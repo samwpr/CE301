@@ -27,7 +27,7 @@ categories_dict = {
     "cpf": "Tax"
     }
 
-print("len of trans", len(joinedTrans))
+#print("len of trans", len(joinedTrans))
 tagging1 = []
 tagging2 = []
 
@@ -50,13 +50,13 @@ for index, element in enumerate(joinedTrans):
             break
 
 
-print(len(tagging1))
-print(len(tagging2))
+#print(len(tagging1))
+#print(len(tagging2))
 #print("tagging 1 ----- ", tagging1)
 #print("tagging 2 ----- ", tagging2)
-print("")
+#print("")
 
-
+'''
 ranking = []
 for key in weights.keys():
     for key2 in weights[key].keys():
@@ -85,6 +85,7 @@ for key, value in categories_dict.items():
 #print("Normal --- ", categories_dict)
 #print("Ranked --- ", ranked_categories_dict)
 
+
 tagging3 = []
 tagging4 = []
 
@@ -103,12 +104,18 @@ for index, element in enumerate(joinedTrans):
             tagging4[index] = value 
             break
 
-print(len(tagging3))
-print(len(tagging4))
+#print(len(tagging3))
+#print(len(tagging4))
 #print("tagging 3 ----- ",tagging3)
 #print("tagging 4 ----- ",tagging4)
+#print("")
+'''
+print("BEFORE CATEGORISATION")
+for i in joinedTrans:
+    print(i)
+
 print("")
 
-
+print("AFTER CATEGORISATION")
 for i, item in enumerate(joinedTrans):
-    print(f"{tagging3[i]} ----- {item}")
+    print(f"{tagging1[i]} ----- {item}")
